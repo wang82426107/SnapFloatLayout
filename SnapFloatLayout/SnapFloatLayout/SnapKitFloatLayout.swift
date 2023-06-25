@@ -98,10 +98,12 @@ public extension Array {
             for itemView in viewArray {
                 // 如果视图没有添加到父视图上不参与布局
                 if itemView.superview == nil {
+                    itemView.floatLayoutClosure = nil
                     continue;
                 }
                 // 如果视图隐藏则不参与布局,并且移除相关布局约束
                 if itemView.isHidden {
+                    itemView.floatLayoutClosure = nil
                     SnapKitFloatConstraintMaker.removeConstraints(item: itemView)
                     continue;
                 }
