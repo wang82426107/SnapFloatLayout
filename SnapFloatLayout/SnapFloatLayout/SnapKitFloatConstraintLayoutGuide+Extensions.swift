@@ -25,12 +25,12 @@
     import UIKit
 #endif
     
-//    
-//@available(iOS 9.0, OSX 10.11, *)
-//public extension SnapKitFloatConstraintLayoutGuide {
-//    
-//    var snp: SnapKitFloatConstraintLayoutGuideDSL {
-//        return SnapKitFloatConstraintLayoutGuideDSL(guide: self)
-//    }
-//    
-//}
+    
+@available(iOS 9.0, OSX 10.11, *)
+public extension SnapKitFloatConstraintLayoutGuide {
+    
+    var snpFloat: SnapKitFloatConstraintLayoutGuideDSL {
+        return SnapKitFloatConstraintLayoutGuideDSL(guide: self)
+    }
+    
+}

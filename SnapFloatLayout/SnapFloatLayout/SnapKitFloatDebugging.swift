@@ -153,7 +153,7 @@ private func descriptionForObject(_ object: AnyObject) -> String {
     desc += type(of: object).description()
     
     if let object = object as? SnapKitFloatConstraintView {
-//        desc += ":\(object.snp.label() ?? pointerDescription)"
+        desc += ":\(object.snpFloat.label() ?? pointerDescription)"
     } else if let object = object as? SnapKitFloatLayoutConstraint {
         desc += ":\(object.label ?? pointerDescription)"
     } else {

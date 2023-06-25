@@ -25,12 +25,12 @@
     import UIKit
 #endif
 
-//    
-//@available(iOS 8.0, *)
-//public extension SnapKitFloatConstraintLayoutSupport {
-//    
-//    var snp: SnapKitFloatConstraintLayoutSupportDSL {
-//        return SnapKitFloatConstraintLayoutSupportDSL(support: self)
-//    }
-//    
-//}
+    
+@available(iOS 8.0, *)
+public extension SnapKitFloatConstraintLayoutSupport {
+    
+    var snpFloat: SnapKitFloatConstraintLayoutSupportDSL {
+        return SnapKitFloatConstraintLayoutSupportDSL(support: self)
+    }
+    
+}

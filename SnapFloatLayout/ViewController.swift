@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     
     func layoutSubViews() {
         self.firstView.remakeFloatLayoutConstraints { make, lastView, nextView in
-            make.left.equalTo(100)
+            make.left.equalTo(self.view.snpFloat.left)
             make.width.equalTo(100)
             make.lastFloatConstraint?.offset(80)
             make.nextFloatConstraint?.offset(-30).priority(.low)
