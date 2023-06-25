@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F587511D2A47EBB5007EC440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587511C2A47EBB5007EC440 /* AppDelegate.swift */; };
+		F587511F2A47EBB5007EC440 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587511E2A47EBB5007EC440 /* SceneDelegate.swift */; };
+		F58751212A47EBB5007EC440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751202A47EBB5007EC440 /* ViewController.swift */; };
+		F58751242A47EBB5007EC440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58751222A47EBB5007EC440 /* Main.storyboard */; };
+		F58751262A47EBB7007EC440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58751252A47EBB7007EC440 /* Assets.xcassets */; };
+		F58751292A47EBB7007EC440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58751272A47EBB7007EC440 /* LaunchScreen.storyboard */; };
+		F58751562A47EC06007EC440 /* SnapKitFloatUILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751312A47EC05007EC440 /* SnapKitFloatUILayoutSupport+Extensions.swift */; };
+		F58751572A47EC06007EC440 /* SnapKitFloatConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751322A47EC05007EC440 /* SnapKitFloatConstraintDescription.swift */; };
+		F58751582A47EC06007EC440 /* SnapKitFloatTypealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751332A47EC05007EC440 /* SnapKitFloatTypealiases.swift */; };
+		F58751592A47EC06007EC440 /* SnapKitFloatConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751342A47EC05007EC440 /* SnapKitFloatConstraintPriorityTarget.swift */; };
+		F587515A2A47EC06007EC440 /* SnapKitFloatConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751352A47EC05007EC440 /* SnapKitFloatConstraintConfig.swift */; };
+		F587515B2A47EC06007EC440 /* SnapKitFloatConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751362A47EC05007EC440 /* SnapKitFloatConstraintDirectionalInsetTarget.swift */; };
+		F587515C2A47EC06007EC440 /* SnapKitFloatConstraintMakerPrioritizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751372A47EC05007EC440 /* SnapKitFloatConstraintMakerPrioritizable.swift */; };
+		F587515D2A47EC06007EC440 /* SnapKitFloatConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751382A47EC05007EC440 /* SnapKitFloatConstraintInsetTarget.swift */; };
+		F587515E2A47EC06007EC440 /* SnapKitFloatConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751392A47EC05007EC440 /* SnapKitFloatConstraintMakerExtendable.swift */; };
+		F587515F2A47EC06007EC440 /* SnapKitFloatLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587513A2A47EC05007EC440 /* SnapKitFloatLayoutConstraint.swift */; };
+		F58751602A47EC06007EC440 /* SnapKitFloatConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587513B2A47EC05007EC440 /* SnapKitFloatConstraintLayoutSupportDSL.swift */; };
+		F58751612A47EC06007EC440 /* SnapKitFloatConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587513C2A47EC05007EC440 /* SnapKitFloatConstraint.swift */; };
+		F58751622A47EC06007EC440 /* SnapKitFloatDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587513D2A47EC05007EC440 /* SnapKitFloatDebugging.swift */; };
+		F58751632A47EC06007EC440 /* SnapKitFloatConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587513E2A47EC05007EC440 /* SnapKitFloatConstraintPriority.swift */; };
+		F58751642A47EC06007EC440 /* SnapKitFloatConstraintMakerRelatable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587513F2A47EC05007EC440 /* SnapKitFloatConstraintMakerRelatable+Extensions.swift */; };
+		F58751652A47EC06007EC440 /* SnapKitFloatLayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751402A47EC05007EC440 /* SnapKitFloatLayoutConstraintItem.swift */; };
+		F58751662A47EC06007EC440 /* SnapKitFloatConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751412A47EC05007EC440 /* SnapKitFloatConstraintConstantTarget.swift */; };
+		F58751672A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751422A47EC05007EC440 /* SnapKitFloatConstraintLayoutGuide.swift */; };
+		F58751682A47EC06007EC440 /* SnapKitFloatConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751432A47EC05007EC440 /* SnapKitFloatConstraintView.swift */; };
+		F58751692A47EC06007EC440 /* SnapKitFloatConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751442A47EC05007EC440 /* SnapKitFloatConstraintAttributes.swift */; };
+		F587516A2A47EC06007EC440 /* SnapKitFloatConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751452A47EC05007EC440 /* SnapKitFloatConstraintMultiplierTarget.swift */; };
+		F587516B2A47EC06007EC440 /* SnapKitFloatConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751462A47EC05007EC440 /* SnapKitFloatConstraintMakerFinalizable.swift */; };
+		F587516C2A47EC06007EC440 /* SnapKitFloatConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751472A47EC05007EC440 /* SnapKitFloatConstraintViewDSL.swift */; };
+		F587516D2A47EC06007EC440 /* SnapKitFloatConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751482A47EC05007EC440 /* SnapKitFloatConstraintInsets.swift */; };
+		F587516E2A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751492A47EC05007EC440 /* SnapKitFloatConstraintLayoutGuide+Extensions.swift */; };
+		F587516F2A47EC06007EC440 /* SnapKitFloatConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587514A2A47EC05007EC440 /* SnapKitFloatConstraintRelatableTarget.swift */; };
+		F58751702A47EC06007EC440 /* SnapKitFloatConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587514B2A47EC05007EC440 /* SnapKitFloatConstraintDirectionalInsets.swift */; };
+		F58751712A47EC06007EC440 /* SnapKitFloatConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587514C2A47EC05007EC440 /* SnapKitFloatConstraintDSL.swift */; };
+		F58751722A47EC06007EC440 /* SnapKitFloatConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587514D2A47EC06007EC440 /* SnapKitFloatConstraintMakerRelatable.swift */; };
+		F58751732A47EC06007EC440 /* SnapKitFloatConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587514E2A47EC06007EC440 /* SnapKitFloatConstraintMaker.swift */; };
+		F58751742A47EC06007EC440 /* SnapKitFloatLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F587514F2A47EC06007EC440 /* SnapKitFloatLayout.swift */; };
+		F58751752A47EC06007EC440 /* SnapKitFloatConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751502A47EC06007EC440 /* SnapKitFloatConstraintItem.swift */; };
+		F58751762A47EC06007EC440 /* SnapKitFloatConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751512A47EC06007EC440 /* SnapKitFloatConstraintOffsetTarget.swift */; };
+		F58751772A47EC06007EC440 /* SnapKitFloatConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751522A47EC06007EC440 /* SnapKitFloatConstraintRelation.swift */; };
+		F58751782A47EC06007EC440 /* SnapKitFloatConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751532A47EC06007EC440 /* SnapKitFloatConstraintLayoutSupport.swift */; };
+		F58751792A47EC06007EC440 /* SnapKitFloatConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751542A47EC06007EC440 /* SnapKitFloatConstraintMakerEditable.swift */; };
+		F587517A2A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751552A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuideDSL.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F58751192A47EBB5007EC440 /* SnapFloatLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapFloatLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F587511C2A47EBB5007EC440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F587511E2A47EBB5007EC440 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F58751202A47EBB5007EC440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F58751232A47EBB5007EC440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F58751252A47EBB7007EC440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F58751282A47EBB7007EC440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F587512A2A47EBB7007EC440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F58751312A47EC05007EC440 /* SnapKitFloatUILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SnapKitFloatUILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		F58751322A47EC05007EC440 /* SnapKitFloatConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintDescription.swift; sourceTree = "<group>"; };
+		F58751332A47EC05007EC440 /* SnapKitFloatTypealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatTypealiases.swift; sourceTree = "<group>"; };
+		F58751342A47EC05007EC440 /* SnapKitFloatConstraintPriorityTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		F58751352A47EC05007EC440 /* SnapKitFloatConstraintConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintConfig.swift; sourceTree = "<group>"; };
+		F58751362A47EC05007EC440 /* SnapKitFloatConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		F58751372A47EC05007EC440 /* SnapKitFloatConstraintMakerPrioritizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintMakerPrioritizable.swift; sourceTree = "<group>"; };
+		F58751382A47EC05007EC440 /* SnapKitFloatConstraintInsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		F58751392A47EC05007EC440 /* SnapKitFloatConstraintMakerExtendable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		F587513A2A47EC05007EC440 /* SnapKitFloatLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatLayoutConstraint.swift; sourceTree = "<group>"; };
+		F587513B2A47EC05007EC440 /* SnapKitFloatConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		F587513C2A47EC05007EC440 /* SnapKitFloatConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraint.swift; sourceTree = "<group>"; };
+		F587513D2A47EC05007EC440 /* SnapKitFloatDebugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatDebugging.swift; sourceTree = "<group>"; };
+		F587513E2A47EC05007EC440 /* SnapKitFloatConstraintPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintPriority.swift; sourceTree = "<group>"; };
+		F587513F2A47EC05007EC440 /* SnapKitFloatConstraintMakerRelatable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SnapKitFloatConstraintMakerRelatable+Extensions.swift"; sourceTree = "<group>"; };
+		F58751402A47EC05007EC440 /* SnapKitFloatLayoutConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatLayoutConstraintItem.swift; sourceTree = "<group>"; };
+		F58751412A47EC05007EC440 /* SnapKitFloatConstraintConstantTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		F58751422A47EC05007EC440 /* SnapKitFloatConstraintLayoutGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		F58751432A47EC05007EC440 /* SnapKitFloatConstraintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintView.swift; sourceTree = "<group>"; };
+		F58751442A47EC05007EC440 /* SnapKitFloatConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintAttributes.swift; sourceTree = "<group>"; };
+		F58751452A47EC05007EC440 /* SnapKitFloatConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		F58751462A47EC05007EC440 /* SnapKitFloatConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		F58751472A47EC05007EC440 /* SnapKitFloatConstraintViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintViewDSL.swift; sourceTree = "<group>"; };
+		F58751482A47EC05007EC440 /* SnapKitFloatConstraintInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintInsets.swift; sourceTree = "<group>"; };
+		F58751492A47EC05007EC440 /* SnapKitFloatConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SnapKitFloatConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		F587514A2A47EC05007EC440 /* SnapKitFloatConstraintRelatableTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		F587514B2A47EC05007EC440 /* SnapKitFloatConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		F587514C2A47EC05007EC440 /* SnapKitFloatConstraintDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintDSL.swift; sourceTree = "<group>"; };
+		F587514D2A47EC06007EC440 /* SnapKitFloatConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		F587514E2A47EC06007EC440 /* SnapKitFloatConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintMaker.swift; sourceTree = "<group>"; };
+		F587514F2A47EC06007EC440 /* SnapKitFloatLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatLayout.swift; sourceTree = "<group>"; };
+		F58751502A47EC06007EC440 /* SnapKitFloatConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintItem.swift; sourceTree = "<group>"; };
+		F58751512A47EC06007EC440 /* SnapKitFloatConstraintOffsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		F58751522A47EC06007EC440 /* SnapKitFloatConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintRelation.swift; sourceTree = "<group>"; };
+		F58751532A47EC06007EC440 /* SnapKitFloatConstraintLayoutSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		F58751542A47EC06007EC440 /* SnapKitFloatConstraintMakerEditable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		F58751552A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F58751162A47EBB5007EC440 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F58751102A47EBB5007EC440 = {
+			isa = PBXGroup;
+			children = (
+				F587511B2A47EBB5007EC440 /* SnapFloatLayout */,
+				F587511A2A47EBB5007EC440 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F587511A2A47EBB5007EC440 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F58751192A47EBB5007EC440 /* SnapFloatLayout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F587511B2A47EBB5007EC440 /* SnapFloatLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F58751302A47EC05007EC440 /* SnapFloatLayout */,
+				F587511C2A47EBB5007EC440 /* AppDelegate.swift */,
+				F587511E2A47EBB5007EC440 /* SceneDelegate.swift */,
+				F58751202A47EBB5007EC440 /* ViewController.swift */,
+				F58751222A47EBB5007EC440 /* Main.storyboard */,
+				F58751252A47EBB7007EC440 /* Assets.xcassets */,
+				F58751272A47EBB7007EC440 /* LaunchScreen.storyboard */,
+				F587512A2A47EBB7007EC440 /* Info.plist */,
+			);
+			path = SnapFloatLayout;
+			sourceTree = "<group>";
+		};
+		F58751302A47EC05007EC440 /* SnapFloatLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F587513C2A47EC05007EC440 /* SnapKitFloatConstraint.swift */,
+				F58751442A47EC05007EC440 /* SnapKitFloatConstraintAttributes.swift */,
+				F58751352A47EC05007EC440 /* SnapKitFloatConstraintConfig.swift */,
+				F58751412A47EC05007EC440 /* SnapKitFloatConstraintConstantTarget.swift */,
+				F58751322A47EC05007EC440 /* SnapKitFloatConstraintDescription.swift */,
+				F587514B2A47EC05007EC440 /* SnapKitFloatConstraintDirectionalInsets.swift */,
+				F58751362A47EC05007EC440 /* SnapKitFloatConstraintDirectionalInsetTarget.swift */,
+				F587514C2A47EC05007EC440 /* SnapKitFloatConstraintDSL.swift */,
+				F58751482A47EC05007EC440 /* SnapKitFloatConstraintInsets.swift */,
+				F58751382A47EC05007EC440 /* SnapKitFloatConstraintInsetTarget.swift */,
+				F58751502A47EC06007EC440 /* SnapKitFloatConstraintItem.swift */,
+				F58751422A47EC05007EC440 /* SnapKitFloatConstraintLayoutGuide.swift */,
+				F58751492A47EC05007EC440 /* SnapKitFloatConstraintLayoutGuide+Extensions.swift */,
+				F58751552A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuideDSL.swift */,
+				F58751532A47EC06007EC440 /* SnapKitFloatConstraintLayoutSupport.swift */,
+				F587513B2A47EC05007EC440 /* SnapKitFloatConstraintLayoutSupportDSL.swift */,
+				F587514E2A47EC06007EC440 /* SnapKitFloatConstraintMaker.swift */,
+				F58751542A47EC06007EC440 /* SnapKitFloatConstraintMakerEditable.swift */,
+				F58751392A47EC05007EC440 /* SnapKitFloatConstraintMakerExtendable.swift */,
+				F58751462A47EC05007EC440 /* SnapKitFloatConstraintMakerFinalizable.swift */,
+				F58751372A47EC05007EC440 /* SnapKitFloatConstraintMakerPrioritizable.swift */,
+				F587514D2A47EC06007EC440 /* SnapKitFloatConstraintMakerRelatable.swift */,
+				F587513F2A47EC05007EC440 /* SnapKitFloatConstraintMakerRelatable+Extensions.swift */,
+				F58751452A47EC05007EC440 /* SnapKitFloatConstraintMultiplierTarget.swift */,
+				F58751512A47EC06007EC440 /* SnapKitFloatConstraintOffsetTarget.swift */,
+				F587513E2A47EC05007EC440 /* SnapKitFloatConstraintPriority.swift */,
+				F58751342A47EC05007EC440 /* SnapKitFloatConstraintPriorityTarget.swift */,
+				F587514A2A47EC05007EC440 /* SnapKitFloatConstraintRelatableTarget.swift */,
+				F58751522A47EC06007EC440 /* SnapKitFloatConstraintRelation.swift */,
+				F58751432A47EC05007EC440 /* SnapKitFloatConstraintView.swift */,
+				F58751472A47EC05007EC440 /* SnapKitFloatConstraintViewDSL.swift */,
+				F587513D2A47EC05007EC440 /* SnapKitFloatDebugging.swift */,
+				F587514F2A47EC06007EC440 /* SnapKitFloatLayout.swift */,
+				F587513A2A47EC05007EC440 /* SnapKitFloatLayoutConstraint.swift */,
+				F58751402A47EC05007EC440 /* SnapKitFloatLayoutConstraintItem.swift */,
+				F58751332A47EC05007EC440 /* SnapKitFloatTypealiases.swift */,
+				F58751312A47EC05007EC440 /* SnapKitFloatUILayoutSupport+Extensions.swift */,
+			);
+			path = SnapFloatLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F58751182A47EBB5007EC440 /* SnapFloatLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F587512D2A47EBB7007EC440 /* Build configuration list for PBXNativeTarget "SnapFloatLayout" */;
+			buildPhases = (
+				F58751152A47EBB5007EC440 /* Sources */,
+				F58751162A47EBB5007EC440 /* Frameworks */,
+				F58751172A47EBB5007EC440 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapFloatLayout;
+			productName = SnapFloatLayout;
+			productReference = F58751192A47EBB5007EC440 /* SnapFloatLayout.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F58751112A47EBB5007EC440 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F58751182A47EBB5007EC440 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F58751142A47EBB5007EC440 /* Build configuration list for PBXProject "SnapFloatLayout" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F58751102A47EBB5007EC440;
+			productRefGroup = F587511A2A47EBB5007EC440 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F58751182A47EBB5007EC440 /* SnapFloatLayout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F58751172A47EBB5007EC440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58751292A47EBB7007EC440 /* LaunchScreen.storyboard in Resources */,
+				F58751262A47EBB7007EC440 /* Assets.xcassets in Resources */,
+				F58751242A47EBB5007EC440 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F58751152A47EBB5007EC440 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58751682A47EC06007EC440 /* SnapKitFloatConstraintView.swift in Sources */,
+				F58751602A47EC06007EC440 /* SnapKitFloatConstraintLayoutSupportDSL.swift in Sources */,
+				F587516A2A47EC06007EC440 /* SnapKitFloatConstraintMultiplierTarget.swift in Sources */,
+				F587515A2A47EC06007EC440 /* SnapKitFloatConstraintConfig.swift in Sources */,
+				F58751622A47EC06007EC440 /* SnapKitFloatDebugging.swift in Sources */,
+				F58751592A47EC06007EC440 /* SnapKitFloatConstraintPriorityTarget.swift in Sources */,
+				F58751582A47EC06007EC440 /* SnapKitFloatTypealiases.swift in Sources */,
+				F58751612A47EC06007EC440 /* SnapKitFloatConstraint.swift in Sources */,
+				F58751672A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuide.swift in Sources */,
+				F58751702A47EC06007EC440 /* SnapKitFloatConstraintDirectionalInsets.swift in Sources */,
+				F58751782A47EC06007EC440 /* SnapKitFloatConstraintLayoutSupport.swift in Sources */,
+				F587516C2A47EC06007EC440 /* SnapKitFloatConstraintViewDSL.swift in Sources */,
+				F58751742A47EC06007EC440 /* SnapKitFloatLayout.swift in Sources */,
+				F587515F2A47EC06007EC440 /* SnapKitFloatLayoutConstraint.swift in Sources */,
+				F587516F2A47EC06007EC440 /* SnapKitFloatConstraintRelatableTarget.swift in Sources */,
+				F58751212A47EBB5007EC440 /* ViewController.swift in Sources */,
+				F587511D2A47EBB5007EC440 /* AppDelegate.swift in Sources */,
+				F587516E2A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuide+Extensions.swift in Sources */,
+				F58751772A47EC06007EC440 /* SnapKitFloatConstraintRelation.swift in Sources */,
+				F58751632A47EC06007EC440 /* SnapKitFloatConstraintPriority.swift in Sources */,
+				F58751762A47EC06007EC440 /* SnapKitFloatConstraintOffsetTarget.swift in Sources */,
+				F58751572A47EC06007EC440 /* SnapKitFloatConstraintDescription.swift in Sources */,
+				F587516D2A47EC06007EC440 /* SnapKitFloatConstraintInsets.swift in Sources */,
+				F58751792A47EC06007EC440 /* SnapKitFloatConstraintMakerEditable.swift in Sources */,
+				F587515C2A47EC06007EC440 /* SnapKitFloatConstraintMakerPrioritizable.swift in Sources */,
+				F58751652A47EC06007EC440 /* SnapKitFloatLayoutConstraintItem.swift in Sources */,
+				F587515E2A47EC06007EC440 /* SnapKitFloatConstraintMakerExtendable.swift in Sources */,
+				F58751722A47EC06007EC440 /* SnapKitFloatConstraintMakerRelatable.swift in Sources */,
+				F58751732A47EC06007EC440 /* SnapKitFloatConstraintMaker.swift in Sources */,
+				F58751752A47EC06007EC440 /* SnapKitFloatConstraintItem.swift in Sources */,
+				F58751712A47EC06007EC440 /* SnapKitFloatConstraintDSL.swift in Sources */,
+				F587515B2A47EC06007EC440 /* SnapKitFloatConstraintDirectionalInsetTarget.swift in Sources */,
+				F58751662A47EC06007EC440 /* SnapKitFloatConstraintConstantTarget.swift in Sources */,
+				F587517A2A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuideDSL.swift in Sources */,
+				F58751692A47EC06007EC440 /* SnapKitFloatConstraintAttributes.swift in Sources */,
+				F587511F2A47EBB5007EC440 /* SceneDelegate.swift in Sources */,
+				F587515D2A47EC06007EC440 /* SnapKitFloatConstraintInsetTarget.swift in Sources */,
+				F58751642A47EC06007EC440 /* SnapKitFloatConstraintMakerRelatable+Extensions.swift in Sources */,
+				F587516B2A47EC06007EC440 /* SnapKitFloatConstraintMakerFinalizable.swift in Sources */,
+				F58751562A47EC06007EC440 /* SnapKitFloatUILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F58751222A47EBB5007EC440 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58751232A47EBB5007EC440 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F58751272A47EBB7007EC440 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58751282A47EBB7007EC440 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F587512B2A47EBB7007EC440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F587512C2A47EBB7007EC440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F587512E2A47EBB7007EC440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76HE6TP5SH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SnapFloatLayout/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dong.SnapFloatLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F587512F2A47EBB7007EC440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76HE6TP5SH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SnapFloatLayout/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dong.SnapFloatLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F58751142A47EBB5007EC440 /* Build configuration list for PBXProject "SnapFloatLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F587512B2A47EBB7007EC440 /* Debug */,
+				F587512C2A47EBB7007EC440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F587512D2A47EBB7007EC440 /* Build configuration list for PBXNativeTarget "SnapFloatLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F587512E2A47EBB7007EC440 /* Debug */,
+				F587512F2A47EBB7007EC440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F58751112A47EBB5007EC440 /* Project object */;
+}
