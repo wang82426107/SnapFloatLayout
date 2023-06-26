@@ -149,6 +149,7 @@ make.left.equalTo(self.view.snpFloat.left)
     }
 ```
 
+
 <br> 
 
 
@@ -246,6 +247,59 @@ make.nextFloatConstraint?.offset(30).priority(.high)
 ```
 
 不需要判断条件,优先级就可以完美解决这个问题.
+
+
+<br> 
+
+
+#### SnapFloatLayout 渐进式混合开发
+
+***
+
+由于 SnapFloatLayout 是基于 <Font color="green"> **SnapKit5.6.0** </Font> 做的功能扩展, 所以完全兼容两个混合使用.
+同时, SnapFloatLayout 也支持普通的添加约束方式. 需要配合 <Font color="red"> **snpFloat** </Font> 使用.
+
+示例代码如下所示.
+
+``` Java
+    func layoutSubViews() {
+        self.firstView.remakeFloatLayoutConstraints { make, lastView, nextView in
+            make.left.equalTo(self.view.snpFloat.left)
+            make.width.equalTo(100)
+            make.lastFloatConstraint?.offset(80)
+            make.nextFloatConstraint?.offset(-30).priority(.low)
+        }
+        
+        self.secondView.remakeFloatLayoutConstraints { make, lastView, nextView in
+            make.left.equalTo(100)
+            make.width.equalTo(100)
+            make.height.equalTo(200)
+            make.lastFloatConstraint?.offset(8)
+            make.nextFloatConstraint?.offset(-8)
+        }
+        [self.firstView, self.secondView].remakeFloatLayoutConstraints(orientation: .topToBottom, needLastConstraint: true)
+        
+        self.thirdView.snpFloat.remakeConstraints { make in
+            make.left.equalTo(self.firstView.snpFloat.right).offset(30)
+            make.width.height.equalTo(100)
+            make.top.equalTo(self.firstView)
+        }
+        
+        self.fourthView.snp.remakeConstraints { make in
+            make.left.equalTo(self.firstView.snp.right).offset(30)
+            make.top.equalTo(self.thirdView.snp.bottom).offset(30)
+            make.width.height.equalTo(60)
+        }
+    }
+```
+
+![](http://dongjia-oss.oss-cn-beijing.aliyuncs.com/blog/20230626141916-2023-06-26-14-19-16.png)
+
+
+效果图如下所示,显示正常.
+
+![](http://dongjia-oss.oss-cn-beijing.aliyuncs.com/blog/20230626141613-2023-06-26-14-16-14.png)
+
 
 
 <br> 
