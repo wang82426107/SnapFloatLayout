@@ -50,6 +50,7 @@
 		F58751782A47EC06007EC440 /* SnapKitFloatConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751532A47EC06007EC440 /* SnapKitFloatConstraintLayoutSupport.swift */; };
 		F58751792A47EC06007EC440 /* SnapKitFloatConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751542A47EC06007EC440 /* SnapKitFloatConstraintMakerEditable.swift */; };
 		F587517A2A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58751552A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuideDSL.swift */; };
+		F5AA341C2A495A6D00FB5C73 /* SnapKitFloatConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA341B2A495A6D00FB5C73 /* SnapKitFloatConstraintView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		F58751532A47EC06007EC440 /* SnapKitFloatConstraintLayoutSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		F58751542A47EC06007EC440 /* SnapKitFloatConstraintMakerEditable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		F58751552A47EC06007EC440 /* SnapKitFloatConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitFloatConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		F5AA341B2A495A6D00FB5C73 /* SnapKitFloatConstraintView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SnapKitFloatConstraintView+Extensions.swift"; path = "../../../SnapFloatLayoutDemo_Pod/SnapFloatLayoutDemo/SnapFloatLayout/SnapKitFloatConstraintView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				F587514A2A47EC05007EC440 /* SnapKitFloatConstraintRelatableTarget.swift */,
 				F58751522A47EC06007EC440 /* SnapKitFloatConstraintRelation.swift */,
 				F58751432A47EC05007EC440 /* SnapKitFloatConstraintView.swift */,
+				F5AA341B2A495A6D00FB5C73 /* SnapKitFloatConstraintView+Extensions.swift */,
 				F58751472A47EC05007EC440 /* SnapKitFloatConstraintViewDSL.swift */,
 				F587513D2A47EC05007EC440 /* SnapKitFloatDebugging.swift */,
 				F587514F2A47EC06007EC440 /* SnapKitFloatLayout.swift */,
@@ -283,6 +286,7 @@
 				F58751792A47EC06007EC440 /* SnapKitFloatConstraintMakerEditable.swift in Sources */,
 				F587515C2A47EC06007EC440 /* SnapKitFloatConstraintMakerPrioritizable.swift in Sources */,
 				F58751652A47EC06007EC440 /* SnapKitFloatLayoutConstraintItem.swift in Sources */,
+				F5AA341C2A495A6D00FB5C73 /* SnapKitFloatConstraintView+Extensions.swift in Sources */,
 				F587515E2A47EC06007EC440 /* SnapKitFloatConstraintMakerExtendable.swift in Sources */,
 				F58751722A47EC06007EC440 /* SnapKitFloatConstraintMakerRelatable.swift in Sources */,
 				F58751732A47EC06007EC440 /* SnapKitFloatConstraintMaker.swift in Sources */,

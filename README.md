@@ -1,3 +1,7 @@
+
+![](http://dongjia-oss.oss-cn-beijing.aliyuncs.com/blog/SpanFloatLayout-2023-06-26-11-23-53.png)
+
+
 # SnapFloatLayout
 
 ### 布局方案效率神器!  一套布局代码应对多种业务场景!!!
@@ -170,6 +174,11 @@ make.left.equalTo(self.view.snpFloat.left)
 * 隐藏视图
 
 * 没有通过 `remakeFloatLayoutConstraints` 添加布局
+
+
+这时候点击效果就会如下所示.
+
+![](http://dongjia-oss.oss-cn-beijing.aliyuncs.com/blog/snapfloatlayout_demo-2023-06-26-11-42-56.gif)
 
 
 <br> 
