@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 public class FloatConstraintMakerExtendable {
     
     var priorityTarget: SnapKitFloatConstraintPriority! = .required
@@ -165,36 +166,77 @@ public extension Array {
                     break
                     
                 case .leftToRight:
-                    let leftConstraintRelatableTarget : SnapKitFloatConstraintRelatableTarget! = (lastView == nil) ? superViewLeftConstraintItem : lastViewRightConstraintItem
-                    let rightConstraintRelatableTarget : SnapKitFloatConstraintRelatableTarget! = (nextView == nil) ? superViewRightConstraintItem : nextViewLeftConstraintItem
-                    constraintMaker.left.equalTo(leftConstraintRelatableTarget).offset(lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    if lastView == nil {
+                        // 左边与父视图布局
+                        constraintMaker.left.equalTo(superViewLeftConstraintItem).offset(lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    } else {
+                        // 左边与上一个试图的右边进行布局
+                        constraintMaker.left.equalTo(lastViewRightConstraintItem).offset(lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    }
                     if needLastConstraint || (!needLastConstraint && i != needRemakeConstraintsViews.count - 1) {
-                        constraintMaker.right.equalTo(rightConstraintRelatableTarget).offset(nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        if nextView == nil {
+                            // 右边与父视图的右边进行布局
+                            constraintMaker.right.equalTo(superViewRightConstraintItem).offset(-nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        } else {
+                            // 右边与下一个试图的左边进行布局
+                            constraintMaker.right.equalTo(nextViewLeftConstraintItem).offset(-nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        }
                     }
                     break
                 case .rightToLeft:
-                    let leftConstraintRelatableTarget : SnapKitFloatConstraintRelatableTarget! = (nextView == nil) ? superViewLeftConstraintItem : nextViewRightConstraintItem
-                    let rightConstraintRelatableTarget : SnapKitFloatConstraintRelatableTarget! = (lastView == nil) ? superViewRightConstraintItem : lastViewLeftConstraintItem
                     if needLastConstraint || (!needLastConstraint && i != 0) {
-                        constraintMaker.left.equalTo(leftConstraintRelatableTarget).offset(nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        if nextView == nil {
+                            // 左边与父视图的左边进行布局
+                            constraintMaker.left.equalTo(superViewLeftConstraintItem).offset(nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        } else {
+                            // 左边边与下一个试图的右边进行布局
+                            constraintMaker.left.equalTo(nextViewRightConstraintItem).offset(nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        }
                     }
-                    constraintMaker.right.equalTo(rightConstraintRelatableTarget).offset(lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    if lastView == nil {
+                        // 右边与父视图布局
+                        constraintMaker.right.equalTo(superViewRightConstraintItem).offset(-lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    } else {
+                        // 右边与上一个试图的左边进行布局
+                        constraintMaker.right.equalTo(lastViewLeftConstraintItem).offset(-lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    }
                     break
                 case .topToBottom:
-                    let topConstraintRelatableTarget : SnapKitFloatConstraintRelatableTarget! = (lastView == nil) ? superViewTopConstraintItem : lastViewBottomConstraintItem
-                    let bottomConstraintRelatableTarget : SnapKitFloatConstraintRelatableTarget! = (nextView == nil) ? superViewBottomConstraintItem: nextViewTopConstraintItem
-                    constraintMaker.top.equalTo(topConstraintRelatableTarget).offset(lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    if lastView == nil {
+                        // 上边与父视图布局
+                        constraintMaker.top.equalTo(superViewTopConstraintItem).offset(lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    } else {
+                        // 上边与上一个试图的下边进行布局
+                        constraintMaker.top.equalTo(lastViewBottomConstraintItem).offset(lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    }
                     if needLastConstraint || (!needLastConstraint && i != needRemakeConstraintsViews.count - 1) {
-                        constraintMaker.bottom.equalTo(bottomConstraintRelatableTarget).offset(nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        if nextView == nil {
+                            // 下边与父视图的下边进行布局
+                            constraintMaker.bottom.equalTo(superViewBottomConstraintItem).offset(-nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        } else {
+                            // 下边与下一个试图的上边进行布局
+                            constraintMaker.bottom.equalTo(nextViewTopConstraintItem).offset(-nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        }
                     }
                     break
                 case .bottomToTop:
-                    let topConstraintRelatableTarget : SnapKitFloatConstraintRelatableTarget! = (nextView == nil) ? lastViewTopConstraintItem : lastViewBottomConstraintItem
-                    let bottomConstraintRelatableTarget : SnapKitFloatConstraintRelatableTarget! = (lastView == nil) ? superViewBottomConstraintItem : nextViewBottomConstraintItem
-                    if needLastConstraint || (!needLastConstraint && i != 0) {
-                        constraintMaker.top.equalTo(topConstraintRelatableTarget).offset(nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                    if lastView == nil {
+                        // 下边与父视图布局
+                        constraintMaker.bottom.equalTo(superViewBottomConstraintItem).offset(-lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    } else {
+                        // 下边与上一个试图的上边进行布局
+                        constraintMaker.bottom.equalTo(lastViewTopConstraintItem).offset(-lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
                     }
-                    constraintMaker.bottom.equalTo(bottomConstraintRelatableTarget).offset(lastFloatConstraint.constant).priority(lastFloatConstraint.priorityTarget)
+                    
+                    if needLastConstraint || (!needLastConstraint && i != 0) {
+                        if nextView == nil {
+                            // 上边与父视图的上边进行布局
+                            constraintMaker.top.equalTo(superViewTopConstraintItem).offset(nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        } else {
+                            // 上边与下一个试图的下边进行布局
+                            constraintMaker.top.equalTo(nextViewBottomConstraintItem).offset(nextFloatConstraint.constant).priority(nextFloatConstraint.priorityTarget)
+                        }
+                    }
                     break
                 case .none:
                     break
